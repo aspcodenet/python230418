@@ -1,3 +1,21 @@
+namn = "leif stefan holmberg"
+
+
+# for i in range(0,len(namn)):
+#     if i == 0 or  namn[i-1] == ' ':
+#         namn[i] = namn[i].upper()    
+    #if första tecken snpnson eller tecknet innan var mellanslag
+    # namn[i] = namn[i].upper()
+
+
+#tecknetInnan = ''
+# for i in range(0,len(namn)):
+#     if i == 0 or tecknetInnan == ' ':
+#         namn[i] = namn[i].upper()    
+#     tecknetInnan = namn[i]
+    #if första tecken snpnson eller tecknet innan var mellanslag
+    # namn[i] = namn[i].upper()
+
 # DYNAMISK DATASTRUKTUR
 # kan växa och krympa
 # lägg till en till kund
@@ -5,6 +23,12 @@
 # for a in range(0,len(MinaBarn)):
 #     print(MinaBarn[a])
 MinaBarn = ["Fanny", "Josefine", "Oliver"]
+
+if "Kalle" in MinaBarn:
+    print("Kalle finns i mina barn")
+
+if "Fanny" in MinaBarn:
+    print("Japp")
 
 
 while True:
