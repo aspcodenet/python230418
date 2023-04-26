@@ -1,3 +1,56 @@
+# DYNAMISK DATASTRUKTUR
+# kan växa och krympa
+# lägg till en till kund
+# en "låda" med många fack i
+# for a in range(0,len(MinaBarn)):
+#     print(MinaBarn[a])
+MinaBarn = ["Fanny", "Josefine", "Oliver"]
+
+
+while True:
+    print("1. Skapa nytt barn")
+    print("2. Uppdatera barn")
+    print("3. Lista alla barn")
+    print("4. Sök barn")
+    action = input("vad vill du göra:")
+    if action == "3":
+        print("*** Alla barn ***")
+        for barn in MinaBarn:
+            print(barn)
+    if action == "1":
+        print("*** Skapa nytt barn ***")
+        namn = input("Ange namn:")
+        MinaBarn.append(namn)
+    if action == "2":
+        nummer = 1 
+        for barn in MinaBarn:
+            print(f"{nummer} {barn}")
+            nummer = nummer + 1
+        nummer = int(input("Vilken vill du ändra på:"))
+        namn = input("Ange nytt namn:")
+        MinaBarn[nummer-1] = namn
+    if action == "4":
+        print("*** Sök barn ***")
+
+        seekWord = input("Ange vadd du vill söka efter:")
+        seekWord = seekWord.lower()
+        for barn in MinaBarn:
+            if barn.lower().find(seekWord) != -1:
+                print(barn)
+
+# barn1 = "Fanny"
+# barn2 = "Josefine"
+# barn3 = "Oliver"
+# barn4 = "Stellan"
+
+# print(barn1)
+# print(barn2)
+# print(barn3)
+# print(barn4)
+
+
+
+
 a = 12
 print(f"fsfsdf {a+13}")
 fult = "läxa"
