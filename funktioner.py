@@ -1,3 +1,17 @@
+
+lista = []
+
+bank = {}
+k = input("Ange kontonummer")
+s = int(int("Ange saldo"))
+bank[k] = s
+bank ["aaa-111"] = 1000
+bank ["aaa-111"] = bank ["aaa-111"] - 100
+
+
+
+
+
 # FUNKTIONER
 # vad avgör om ni får köpa öl?
 # (spec) 
