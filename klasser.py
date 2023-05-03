@@ -1,7 +1,15 @@
 from dataclasses import dataclass
 
 
+@dataclass
+class Team:
+    Namn:str=""
+    FoundedYear:int=0
+    Player = []
 
+class Player:
+    Namn:str=""
+    Age:int=0
 
 
 
