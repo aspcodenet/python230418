@@ -7,6 +7,6 @@ def IsPalindrom(input):
     return backwards == s
 
 
-print(IsPalindrom("Hejsan"))
-print(IsPalindrom("Anna"))
-print(IsPalindrom("Ni talar bra latin"))
+# print(IsPalindrom("Hejsan"))
+# print(IsPalindrom("Anna"))
+# print(IsPalindrom("Ni talar bra latin"))
