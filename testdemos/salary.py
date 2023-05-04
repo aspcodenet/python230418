@@ -6,9 +6,17 @@
 def calculateDiscountedPrice(totalPrice, isMember):
     rabatt = 0
     if totalPrice >= 5000:
-        rabatt = rabatt + (totalPrice * 0.01)
+        rabatt = rabatt + ((totalPrice-5000) * 0.01)
     if isMember:
         rabatt = rabatt + (totalPrice * 0.02)
     if totalPrice > 1000:
-        rabatt = rabatt + 1000
+        rabatt = rabatt + 100
     return totalPrice - rabatt
+
+while True:
+    isMember = False
+    price = float(input("pris"))
+    if input("medlem  J/N")  == "J":
+        isMember = True
+    newPrice = calculateDiscountedPrice(price,isMember)
+    print(f"Nytt pris:{newPrice}")
