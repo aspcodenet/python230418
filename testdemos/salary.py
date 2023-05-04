@@ -3,6 +3,9 @@
 # om man handlat för minst 5000 kr man 1% rabatt på priset över 5000
 # vi ska skriva en calculateDiscountedPrice(totalPrice) som implementerar dessa regler
 
+
+
+
 def calculateDiscountedPrice(totalPrice, isMember):
     rabatt = 0
     if totalPrice >= 5000:
@@ -13,10 +16,10 @@ def calculateDiscountedPrice(totalPrice, isMember):
         rabatt = rabatt + 100
     return totalPrice - rabatt
 
-while True:
-    isMember = False
-    price = float(input("pris"))
-    if input("medlem  J/N")  == "J":
-        isMember = True
-    newPrice = calculateDiscountedPrice(price,isMember)
-    print(f"Nytt pris:{newPrice}")
+# while True:
+#     isMember = False
+#     price = float(input("pris"))
+#     if input("medlem  J/N")  == "J":
+#         isMember = True
+#     newPrice = calculateDiscountedPrice(price,isMember)
+#     print(f"Nytt pris:{newPrice}")
