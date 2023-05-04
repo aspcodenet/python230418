@@ -29,6 +29,27 @@ class SalaryTests(unittest.TestCase):
         # assert
         self.assertEqual(result,1900)
 
+    def test_when_member_and_cost_is_more_than_1000_andless_than_5000_then_price_is_correct(self):
+        # arrange
+        isMember = True
+        price = 2000
+        # act
+        result = calculateDiscountedPrice(price, isMember)
+        # assert
+        self.assertEqual(result,1860)
+
+
+    def test_when_member_and_cost_is_more_than_1000_andmore_than_5000_then_price_is_correct(self):
+        # arrange
+        isMember = True
+        price = 6000
+        # act
+        result = calculateDiscountedPrice(price, isMember)
+        # assert
+        self.assertEqual(result,5770)
+
+
+
 
 unittest.main()
 
