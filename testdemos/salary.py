@@ -8,6 +8,8 @@
 
 def calculateDiscountedPrice(totalPrice, isMember):
     rabatt = 0
+    if totalPrice >= 30:
+        rabatt = rabatt + 18
     if totalPrice >= 5000:
         rabatt = rabatt + ((totalPrice-5000) * 0.01)
     if isMember:
