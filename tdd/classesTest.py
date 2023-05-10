@@ -17,8 +17,10 @@ class UserRegistrationTests(unittest.TestCase):
         sut.Users.clear()
         #act'
         result = sut.Register("a.b@c.se",    "Stefan")
+        user = sut.FindUser("a.b@c.se")
         #assert
         self.assertTrue(result)
+        self.assertIsNotNone(user)
 
 
     def test_when_registering_and_using_invalid_email_should_return_error(self):
