@@ -1,0 +1,1 @@
+[{"py/object": "__main__.Course", "Name": "Pannkakor", "Price": 100, "Type": "Vegetarisk", "Calories": 30}, {"py/object": "__main__.Course", "Name": "Korvstroganoff", "Price": 110, "Type": "K\u00f6tt", "Calories": 100}, {"py/object": "__main__.Course", "Name": "Morotssoppa", "Price": 90, "Type": "Vegetarisk", "Calories": 50}]
