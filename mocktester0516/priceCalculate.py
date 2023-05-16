@@ -6,6 +6,7 @@ def calculatePrice(belopp, isPensionar):
     currentDateAndTime = datetime.datetime.now()
     weekDay = currentDateAndTime.weekday()
     if weekDay == 1 and isPensionar == True: 
+        sendSms()
         return belopp * 0.98
     return belopp
 
