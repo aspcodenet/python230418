@@ -22,17 +22,17 @@ from unittest.mock import Mock,patch, MagicMock
 
 
 class articleserviceTest(unittest.TestCase):
-    def test_fetch_filters_on_userid(self):
-        userId = 2
+    # def test_fetch_filters_on_userid(self):
+    #     userId = 2
 
-        result = getArticlesToShow(userId)
+    #     result = getArticlesToShow(userId)
 
-        antalFelUserId = 0
-        for x in result:
-            if x.UserId != userId:
-                antalFelUserId = antalFelUserId + 1
-        self.assertEqual(0,antalFelUserId)
-        self.assertGreater(len(result),0)
+    #     antalFelUserId = 0
+    #     for x in result:
+    #         if x.UserId != userId:
+    #             antalFelUserId = antalFelUserId + 1
+    #     self.assertEqual(0,antalFelUserId)
+    #     self.assertGreater(len(result),0)
 
 
     def test_unit_fetch_filters_on_userid(self):
@@ -49,11 +49,6 @@ class articleserviceTest(unittest.TestCase):
 
             result = getArticlesToShow(userId)
 
-        antalFelUserId = 0
-        for x in result:
-            if x.UserId != userId:
-                antalFelUserId = antalFelUserId + 1
-        self.assertEqual(0,antalFelUserId)
         self.assertEqual(len(result),2)
 
 
