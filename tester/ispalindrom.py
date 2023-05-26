@@ -1,5 +1,5 @@
 def IsPalindrom(input):
-    s = input.replace(" ", "").lower()
+    s = input.replace(" ", "").upper()
     backwards = ""
     for part in s:
         backwards = part + backwards
@@ -7,6 +7,5 @@ def IsPalindrom(input):
     return backwards == s
 
 
-# print(IsPalindrom("Hejsan"))
 # print(IsPalindrom("Anna"))
 # print(IsPalindrom("Ni talar bra latin"))

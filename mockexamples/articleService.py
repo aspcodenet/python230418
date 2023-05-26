@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 import json
 
 @dataclass
@@ -10,8 +10,14 @@ class Article:
     
 
 def getArticlesToShow(userIDFilter):
+
+
+
     lista = []
-    response = urlopen("https://jsonplaceholder.typicode.com/albums")
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3'}
+    reg_url = "https://fakestoreapi.com/products"
+    req = Request(url=reg_url, headers=headers)
+    response = urlopen(req)
     data_json = json.loads(response.read().decode('utf-8'))
     for album in data_json:
         title = album['title']
@@ -20,3 +26,8 @@ def getArticlesToShow(userIDFilter):
         if userId == int(userIDFilter):
             lista.append(Article(title,userId,id))        
     return lista
+
+
+
+x = getArticlesToShow(1)
+print(x)
